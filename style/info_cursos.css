@@ -1,0 +1,41 @@
+/* Contenedora de toda la ecion */
+.info_cursos{
+    margin: 1em 0;
+    height: auto;
+    min-height: 50vh;
+    display: flex;
+    gap: 1em;
+    
+    /* Pregunta de la caja */
+    h2{
+        width: 40em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight:800;
+        text-align: center;
+        border: 0.1em solid var(--color-bordes1);
+        color: var(--color_letra_negro);
+        border-radius: 0.5em;
+    }
+    /* Contiene todos los elemetos de la lista */
+    .caja_lista{
+        padding: 1em 2em;
+        line-height: 2.5em;
+        border: 0.1em solid var(--color-bordes1);    
+        border-radius: 0.5em;
+
+        /* Modifica todos los elemtos de la lista */
+        li{
+            color: var(--color_letra_negro);
+            font-size: 1em;
+            text-align: justify;
+            list-style-type: style circle;;
+        }
+        span{
+            color: var(--color_letra_negro);
+            font-size: 1em;
+            font-weight: 600;
+        }
+    }
+}

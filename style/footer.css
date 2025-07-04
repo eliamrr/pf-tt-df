@@ -1,0 +1,21 @@
+footer{
+    background-color: var(--color_fondo_h);
+}
+.caja_listas_footer{
+    padding: 1em 10em;
+    display: flex;
+    justify-content:space-between;
+    /* Contine las lista */
+    .lista_footer{
+        padding: 2em;
+        display: flex;
+        list-style: none;
+        gap: 2em;
+    }
+}
+
+p{
+    padding: 2em 0;
+    text-align: center;
+    color: var(--color_letra_blanco);
+}

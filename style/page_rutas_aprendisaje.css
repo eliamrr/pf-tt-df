@@ -1,0 +1,54 @@
+/* Contiene la secion rutas de aprendisaje  */
+.rutas_aprendisaje{
+    margin: 1em 0;
+    background-color: var(--color-fondo_ra);
+    background-color:white;
+    /* Modifica el texto principal  */
+    .h2{ 
+        margin: 1em 0;
+        padding: 1em ;
+        text-align: center;
+        border: 0.1em solid var(--color-bordes1);
+        border-radius: 0.2em;
+        color: var(--color_letra_negro);
+    }
+    /* Contiene todas las cajas de las rutas de aprendisaje  */
+    .contenedor_ra{
+        margin: 1em 0;
+        padding: 2em 1em;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1em;
+        border: 0.1em solid var(--color-bordes1);
+        border-radius: 0.5em;
+        /* Conntiene la imagen y la info */
+        .cajas_ra{
+            padding: 1em;
+            width: 25%;
+            min-width: 15em;
+            height: 20em;
+            transition: all 0.1s ease;
+            cursor: pointer;
+            /* Contiene solo la imgen */
+            .caja_imagen{
+                width: 100%;
+                height: 85%;
+                background-color:var(--color_fondo1);
+                border-radius:0.5em;
+                .imagen{
+                    width: 100%;
+                    height: 100%;
+                    object-fit:contain;
+                }
+            }
+            /* Modifica el texto de la caja */
+            .nombre_c{
+                padding: 1em;
+                font-weight: 700;
+                color: var(--color_letra_negro);
+            }    
+        }
+    }
+    
+}

@@ -1,0 +1,49 @@
+.m{
+    height: 90vh;
+    display: flex;
+}
+.caja_contenedora_pl{
+    margin:auto;
+    padding: 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* titulo de el loginn */
+    h2{
+        padding: 1em;
+        font-size: 2em;
+        font-weight:bold;
+        color: var(--color_letra_negro);
+    }
+    .formulario_lp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            margin: 0.5em 0;
+            padding: 1em;
+            width: 25em;
+            min-width: 20em;
+            color: var(--color_letra_negro);
+            border-radius: 0.5em;
+
+
+        }
+        button{
+            width: 10em;
+            margin:1em 0;
+            padding: 1em;
+            color: var(--color_letra_blanco);
+            background-color: var(--color_fondo_h);
+            transition: all 0.2s ease;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
+    }
+    p{
+        padding: 1em;
+        color: var(--color_letra_negro);
+    }
+}
