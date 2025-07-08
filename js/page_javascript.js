@@ -1,54 +1,65 @@
 let jsContenido = [
     {
-        clase:1,
+        clase:"JS 1 - Introducción a JavaScript",
         ruta: "https://www.youtube.com/embed/iJ5qkWv1lcg?si=5JG-cmvAWbd5u0UW" ,     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",
+        temas:["¿Qué es y para qué se usa JavaScript?","Conceptos generales. Sintaxis básica","Variable: ¿qué es y cómo declararla? Tipos","Asignación y cambio del valor","Operadores aritméticos","Cversión a entero y flotante","Ejercicio"]
     },
+    // {
+    //     clase:2,
+    //     ruta:"https://www.youtube.com/embed/RC0VkzWcOzY?si=2MZFwOkojGFLAr9S",     
+    // },
     {
-        clase:2,
-        ruta:"https://www.youtube.com/embed/RC0VkzWcOzY?si=2MZFwOkojGFLAr9S",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",   
-    },
-    {
-        clase:3,
+        clase:"JS 2 - Condicionales y Ciclos",
         ruta:"https://www.youtube.com/embed/RQ2FJfRT0D0?si=w6TEDTFgfBllbXB4",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",  
+        temas:["Diagrama de flujo","Condicional: ¿Qué es?","Operadores lógicos y de comparación: ¿Qué son y cuál es su uso en los condicionales?","Bucles: ¿Qué son? Tipos y diferencias entre sí","Cómo combinar operadores lógicos y ciclos","Ejercicio","Cuestionario"]
     },
+    // {
+    //     clase:4,
+    //     ruta:"https://www.youtube.com/embed/cmcbqAPiM6w?si=04GTmKYlnV9QAwhq",     
+    // },
     {
-        clase:4,
-        ruta:"https://www.youtube.com/embed/cmcbqAPiM6w?si=04GTmKYlnV9QAwhq",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",   
-    },
-    {
-        clase:5,
+        clase:"JS 3 - Programación Modular con Funciones",
         ruta:"https://www.youtube.com/embed/hD7KlfkBSYU?si=ervuE7LpGB87caXq",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",        
+        temas:["Funciones: ¿Qué son? Parámetros de entrada y de salida","Scope global y local","Programación modular vs. Funciones","Ejercitación de funciones","Parámetros.","Funciones nativas.","Ejercicio"]
     },
+    // {
+    //     clase:6,
+    //     ruta:"https://www.youtube.com/embed/HWawIgnu8Bo?si=geX1M2m18QkCDLYB",     
+    // },
     {
-        clase:6,
-        ruta:"https://www.youtube.com/embed/HWawIgnu8Bo?si=geX1M2m18QkCDLYB",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
-    },
-    {
-        clase:7,
+        clase:"JS 5 - DOM y Eventos",
         ruta:"https://www.youtube.com/embed/_KKDiOPpfe8?si=5YCMEibboOuhWvgv",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",       
+        temas:["Manipulación del DOM","Definición, alcance y su importancia para operar sobre elementos HTML","Eventos en JS","Eventos: ¿Qué son, para qué sirven y cuáles son los más comunes?","Escuchar un evento sobre el DOM","Ejercicios.","Cuestionario.","Ruta de Avance"]
     },
     {
-        clase:8,
+        clase:"JS 6 - LocalStorage, SessionStorage y Carrito de Compras",
         ruta:"https://www.youtube.com/embed/1Z8LKNU9SXs?si=J5Wamw9sTcECMJFR",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",      
+        temas:["Introducción a LocalStorage y SessionStorage","Diferencias entre LocalStorage y SessionStorage","Implementación de un carrito de compras utilizando LocalStorage o SessionStorage","Ejercicios."]
     },
+    // {
+    //     clase:9,
+    //     ruta:"https://www.youtube.com/embed/b-zxQN_CYj8?si=fThMpK28mOnOrHzR",     
+    //     informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
+    // },
     {
-        clase:9,
-        ruta:"https://www.youtube.com/embed/b-zxQN_CYj8?si=fThMpK28mOnOrHzR",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
-    },
-    {
-        clase:8,
+        clase:"JS 7 - Asincronía",
         ruta:"https://www.youtube.com/embed/o_h6dHRmyj8?si=7UdCS7hh_E9JkpRX",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
+        temas:["Asincronía","Consumo de API REST a través de fetch","Procesamiento de los datos","Incluir los datos consumidos y procesados por medio de fetch en nuestro proyecto","Ejercicios.","Cuestionario."]
     },
+    // {
+    //     clase:9,
+    //     ruta:"https://www.youtube.com/embed/ECkiqlRLHWY?si=fyp8H2LWwg_j2REj",     
+    // },
+    {
+        clase:"API y Procesamiento de Datos",
+        ruta:"https://www.youtube.com/embed/Y9u2zL_cLik?si=5wdTWBa5HR4zFjXi" ,     
+        temas:["Desarrollo de un proyecto integrador que combine HTML, CSS, y JavaScript","Consumo de API REST","Incorporación y procesamiento de los datos en nuestro HTML","Incorporación de buenas prácticas de accesibilidad y SEO","Presentación del proyecto final","Ejercicios.","Proyecto Final"]
+    },
+    // {
+    //     clase:10,
+    //     ruta:"https://www.youtube.com/embed/4uB_VXS99lg?si=bd34zXFvdffBDenF",     
+    //     informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
+    // },
 ]
 function agregarContenido(cursos,contenedor){
     cursos.forEach(curso =>{
@@ -70,16 +81,22 @@ function agregarContenido(cursos,contenedor){
 
         let nombre = document.createElement("h3")
         nombre.classList.add("nombre_ch")
-        nombre.textContent = `clase ${curso.clase}`
+        nombre.textContent =curso.clase
 
-        let descripcion = document.createElement("p")
-        descripcion.classList.add("info_ch")
-        descripcion.textContent = curso.informacion
+        let cajalista = document.createElement("ul")
+
+        curso.temas.forEach(info=>{
+            let li = document.createElement("li")
+            li.textContent = info
+            li.classList.add("info_ch")
+            cajalista.appendChild(li)
+        })
+
         
         // Combinamos elementos
         caja_video.appendChild(iframe)
 
-        caja_info.append(nombre, descripcion)
+        caja_info.append(nombre, cajalista)
 
         setcion.append(caja_video,caja_info)
         contenedor.appendChild(setcion)

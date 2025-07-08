@@ -1,34 +1,52 @@
-    /* Crea la caja para cada elemento */
-.caja_curso_html{
-    margin: 1em 0 ;
-    padding: 1.5em;        
-    display: flex;
-    gap: 1em;
-    border: 0.1em solid var(--color-bordes1);
-    border-radius: 0.5em;
+/* Crea la caja para cada elemento */
+.caja_contenidos{
+    padding: 1em 0;
+    h2{ 
+        margin: 0 0 1em 0 ; 
+        padding: 1em ;
+        text-align: center;
+        border: 0.1em solid var(--color-bordes1);
+        border-radius: 0.2em;
+        color: var(--color_letra_negro);
+        border: 0.1em solid var(--color-bordes1);   
+        box-shadow: 0 0 0.5em var(--color-bordes1);
+    }
+    .caja_curso_html{
+        margin: 2em 0;
+        padding: 2em;        
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        border-radius: 0.5em;
+        border: 0.1em solid var(--color-bordes1);
+        box-shadow: 0 0 0.5em var(--color-bordes1);
+    }
     /* Caja que contiene la imagen de los cursos */
     .caja_imagen_ch{
-        width: 25em;
+        width: 100%;
         height: 15em;
         .imagen_ch{
             width: 100%;
             height: 100%;
             object-fit:cover;
             border-radius: 0.5em;
+            border: none;
         }  
     }
     /* caja que contine los textos */
     .caja_info_ch{
-        padding: 0 1em;
-        width: 60%;
+        padding: 1em 1em;
+        width: 100%;
         line-height: 1.5em;
+        border-radius: 0.5em;
+        box-shadow: 0 0 0.5em var(--color-bordes1);
         .nombre_ch{
             color: var(--color_letra_negro);
-            margin: 0;
+            margin: 1em ;
         }
         .info_ch{
-            padding: 1em 0;
-            margin: 0;
+            margin: 0 2.5em;
+            padding: 0.1em 0.5em ;
             text-align:start;
             color: var(--color_letra_negro);
         }

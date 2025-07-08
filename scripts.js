@@ -1,3 +1,4 @@
+// alert("En CONTRUCION")
 // Contiene la imformacion de cursos
 let cursos = [
     {
@@ -45,6 +46,7 @@ function agegarCosas(cursos, contenedor){
         
         // Creamos un articulo
         let articulo = document.createElement("article")
+        articulo.id = `${c.name}`
         articulo.classList.add("cajas_ra")
         articulo.classList.add("agrandar")
         articulo.classList.add("bordes_de")
@@ -82,3 +84,27 @@ agegarCosas(cursos, divCursos)
 
 //Llamamos a la funcion y le pasamos las rutas de aprendisaje  y el contenedor
 agegarCosas(rutasAprendisaje, divRutasAprendiosaje)
+
+// Funcion que rededirije a otra subpagina al hacer clik 
+function rederijirPage(idCaja, ruta){
+    // Accedemos al documento a traves del idCaja para poder para hcignarle la funcion
+    let caja = document.getElementById(idCaja)
+    // Asignamos la funcione
+    caja.addEventListener("click", function() {
+        window.location.href = ruta
+    })
+}
+
+// Redirije a pagina Cursos
+rederijirPage("Html","pages/lenguajes/html.html")
+rederijirPage("Css","pages/lenguajes/css.html")
+rederijirPage("JavasCript","pages/lenguajes/javascript.html")
+rederijirPage("Python","pages/lenguajes/python.html")
+
+
+// Redirije a rutas de aprendisaje
+rederijirPage("Desarrollo Front-end","pages/rutas aprendisaje/desarrollo_front.html")
+rederijirPage("Desarrollo Back-end","pages/rutas aprendisaje/desarrollo_back.html")
+rederijirPage("Desarrollo Movil","pages/rutas aprendisaje/desarrollo_movil.html")
+
+

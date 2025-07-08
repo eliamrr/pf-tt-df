@@ -1,23 +1,13 @@
+// Contiene la imformacion de cursos
 let cursos = [
     {
-        name: "Html",
-        image: "../img/cursos/html_na.jpg"
-    },
-    {
-        name: "Css",
-        image: "../img/cursos/css_azul.png"
-    },
-    {
-        name: "JavasCript",
-        image: "../img/cursos/js.png"
-    },
-    {
         name: "Python",
-        image: "../img/cursos/pytohomn.png"
+        image: "../../img/cursos/pytohomn.png"
     }
 ]
 
-let main_page_cursos = document.getElementById("contenedor_cursos")
+// Accedmos al contemnedor de los cursos
+let divCursos = document.getElementById("contenedor_cursos")
 
 function agregarCosasHorizontales(cursos,contenedor){
     cursos.forEach(curso => {
@@ -51,7 +41,10 @@ function agregarCosasHorizontales(cursos,contenedor){
         contenedor.appendChild(articule)
     })
 }
-agregarCosasHorizontales(cursos, main_page_cursos)
+
+//Llamamos a la funcion y le pasamos los cursos  y el contenedor
+agregarCosasHorizontales(cursos, divCursos)
+
 
 // Funcion que rededirije a otra subpagina al hacer clik 
 function rederijirPage(idCaja, ruta){
@@ -64,7 +57,6 @@ function rederijirPage(idCaja, ruta){
 }
 
 // Redirije a pagina Cursos
-rederijirPage("Html","lenguajes/html.html")
-rederijirPage("Css","lenguajes/css.html")
-rederijirPage("JavasCript","lenguajes/javascript.html")
-rederijirPage("Python","lenguajes/python.html")
+rederijirPage("Python","../../pages/lenguajes/python.html")
+
+

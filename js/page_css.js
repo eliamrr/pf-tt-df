@@ -1,44 +1,45 @@
 let cssContenido = [
     {
-        clase:1,
+        clase:"CSS 1 - Introducción a CSS",
         ruta:"https://www.youtube.com/embed/3O5I0o3jAmg?si=aKR3jKFGFDbpbs4t" ,     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",
+        temas:["Bases del CSS","CSS externo, interno y en línea","Selectores básicos (id, clase, etiqueta, universal)","Especificidad, Herencia, Cascada y Orden de las reglas en CSS","Ejercicios","Cuestionario","Ruta de Avance"]
+
     },
+    // {
+    //     clase:2,
+    //     ruta:"https://www.youtube.com/embed/1aiPlpgu_EQ?si=S3kdlZNE_FqV562C",     
+
+    // },
     {
-        clase:2,
-        ruta:"https://www.youtube.com/embed/1aiPlpgu_EQ?si=S3kdlZNE_FqV562C",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",      
-    },
-    {
-        clase:3,
+        clase:"CSS 2 - Medidas, Colores, Fondos, Fuentes e Íconos",
         ruta:"https://www.youtube.com/embed/nLZfFAku7N0?si=AqkFf5izEop7WOC_",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
+        temas:["Unidades de medida","Colores CSS","Fondos en CSS","Fuentes y tipografías","Estilos para textos y listas","Íconos","Ejercicios"]
+        
     },
+    // {
+    //     clase:4,
+    //     ruta:"https://www.youtube.com/embed/fdjCeZPOXy8?si=uLjKkqnKt3WEN-Uw",     
+    // },
     {
-        clase:4,
-        ruta:"https://www.youtube.com/embed/fdjCeZPOXy8?si=uLjKkqnKt3WEN-Uw",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",    
-    },
-    {
-        clase:5,
+        clase:"CSS 3 - Modelo de Caja, Posicionamiento y Flexbox",
         ruta:"https://www.youtube.com/embed/OqLac1ORFJA?si=7v5sp6HJqcf1SDNI",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",         
+        temas:["Modelo de caja y propiedades","Posicionamiento y visualización","Selectores avanzados","¿Qué es Flexbox?","Propiedades del contenedor Flex y los Flex items","Ejercicios","Cuestionarios"]
+    
     },
+    // {
+    //     clase:6,
+    //     ruta:"https://www.youtube.com/embed/4f6wNqdNEA0?si=wlF-DxqiVuageEdp",     
+    // },
     {
-        clase:6,
-        ruta:"https://www.youtube.com/embed/4f6wNqdNEA0?si=wlF-DxqiVuageEdp",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",       
-    },
-    {
-        clase:7,
+        clase:"CSS 4 - Grid y Media Queries",
         ruta:"https://www.youtube.com/embed/67APrmz1pX8?si=l_SBoyTS_4aAZGjR",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",       
+        temas:["¿Qué es Grid?","Implementación de Grid","Maquetado con Flex y Grid","Media Queries","Ejercicios"]
+    
     },
-    {
-        clase:8,
-        ruta:"https://www.youtube.com/embed/7wuYj2Bwqdc?si=Y-uHhWjumEsVwH7Z",     
-        informacion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime natus neque accusamus placeat atque cumque perspiciatis laboriosam facilis! Perferendis modi necessitatibus ea quam velit nemo facere fuga ut odio!",     
-    },
+    // {
+    //     clase:8,
+    //     ruta:"https://www.youtube.com/embed/7wuYj2Bwqdc?si=Y-uHhWjumEsVwH7Z",     
+    // },
 ]
 function agregarContenido(cursos,contenedor){
     cursos.forEach(curso =>{
@@ -60,16 +61,21 @@ function agregarContenido(cursos,contenedor){
 
         let nombre = document.createElement("h3")
         nombre.classList.add("nombre_ch")
-        nombre.textContent = `clase ${curso.clase}`
+        nombre.textContent =curso.clase
 
-        let descripcion = document.createElement("p")
-        descripcion.classList.add("info_ch")
-        descripcion.textContent = curso.informacion
-        
+        let cajalista = document.createElement("ul")
+
+        curso.temas.forEach(info=>{
+            let li = document.createElement("li")
+            li.textContent = info
+            li.classList.add("info_ch")
+            cajalista.appendChild(li)
+        })
+
         // Combinamos elementos
         caja_video.appendChild(iframe)
 
-        caja_info.append(nombre, descripcion)
+        caja_info.append(nombre, cajalista)
 
         setcion.append(caja_video,caja_info)
         contenedor.appendChild(setcion)

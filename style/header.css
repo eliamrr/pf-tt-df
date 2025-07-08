@@ -5,7 +5,7 @@ header{
     right: 0;
     left: 0;
     .barra_navegacion{
-        padding: 1em 11em ;
+        padding: 1em 2em ;
         display: flex;
         justify-content: space-between;
         background-color: var(--color_fondo_h);

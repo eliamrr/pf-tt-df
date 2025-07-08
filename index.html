@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/824147cb98.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
     <header>
         <!-- Contiene toda la barra de navegacion -->
         <nav class="barra_navegacion" >
             <!-- Nombre de la academia en la barra de navegacion -->
             <a href="index.html" ><h4>Talento - Tech</h4></a>
             <!-- Caja de los elementos de la lista -->
-            <ul class="lista">
+            <ul class="lista ocultar">
                 <li><a href="pages/cursos.html">Cursos</a></li>
                 <li><a href="pages/rutas_aprendisaje.html">Rutas de aprendizaje</a></li>
                 <li><a href="pages/login.html">Acceder</a></li>
                 <li>
-                    <a href="pages/carrito.html" ><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" ><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
             </ul>
         </nav>
@@ -53,6 +53,8 @@
                     </li>
             </ol>
         </section>
+
+
         <!-- Secion cursos -->
         <section class="rutas_aprendisaje" >
             <h2 class="h2">Cursos</h2>
@@ -64,29 +66,36 @@
                     </div>
                     <h4 class="nombre_c" >Html</h4>
                 </article> -->
-                <!-- Curso de CSS -->
-                <!-- <article class="cajas_ra" >
-                    <div  class="caja_imagen">
-                        <img  class="imagen" src="img/cursos/css_azul.png" alt="">
-                    </div>
-                    <h4 class="nombre_c" >Html</h4>
-                </article> -->
-                <!-- Curso de Javascrip -->
-                <!-- <article class="cajas_ra">
-                    <div  class="caja_imagen">
-                        <img class="imagen" src="img/cursos/js.png" alt="">
-                    </div>
-                    <h4 class="nombre_c" >Html</h4>
-                </article> -->
-                <!-- Curso de python -->
-                <!-- <article class="cajas_ra" >
-                    <div class="caja_imagen">
-                        <img class="imagen" src="img/cursos/pytohomn.png" alt="">
-                    </div>
-                    <h4 class="nombre_c" >Html</h4>
-                </article> -->
             </div>
         </section>
+        <!-- Contiene info los objetivos del curso -->
+        <section class="info_cursos" >
+            <h2>¿Qué vas a lograr al finalizar?</h2>
+            <ul class="caja_lista" >
+                    <li>
+                        Dominarlos fundamentos hasta técnicas avanzadas
+                    </li>
+                    <li>
+                        Crear aplicaciones y scripts útiles para proyectos reales.
+                    </li>
+                    <li>
+                        Automatizar tareas y resolver problemas de forma eficiente.
+                    </li>
+                    <li>
+                        Mejorar tu perfil profesional y abrir nuevas oportunidades laborales.
+                    </li>
+                    <li>
+                        Comprender y trabajar con datos para análisis y desarrollo.
+                    </li>
+                    <li>
+                        Aplicar buenas prácticas para proyectos escalables y de calidad.
+                    </li>
+                    <li>
+                        Desarrollar proyectos completos con ejercicios y guías prácticas
+                    </li>
+            </ul>
+        </section>
+
         <!-- Contine la parte de rutas de aprendisaje  -->
         <section class="rutas_aprendisaje" >
             <h2 class="h2" >Rutas de aprendisaje</h2>
@@ -99,25 +108,10 @@
                     </div>
                     <h4 class="nombre_c" >Desarrollo Front-end</h4>
                 </article> -->
-                <!-- Contine info del desarrollo back-end -->
-                <!-- <article class="cajas_ra agrandar">
-                    <div class="caja_imagen" >
-                        <img class="imagen" src="img/rutas_aprendisaje/ba.png" alt="">
-                    </div>
-                    <h4 class="nombre_c" >Desarrollo Back-end</h4>
-                </article> -->
-                <!-- Contine info del desarrollo movil -->
-                <!-- <article class="cajas_ra agrandar c_color">
-                    <div class="caja_imagen" >
-                        <img class="imagen" src="img/rutas_aprendisaje/mm.png" alt="">
-                    </div>
-                    <h4 class="nombre_c" >Desarrollo Movil</h4>
-                </article> -->
             </div>
         </section>    
 
     </main>
-
     <footer>
         <!-- contine las listas  -->
         <div class="caja_listas_footer" >
@@ -136,7 +130,7 @@
             <!-- Iconos de el lado isquierdo -->
             <ul class="lista_footer">
                 <li><a href="">Inicio</a></li>
-                <li><a href="">Cursos</a></li>
+                <li><a href="pages/cursos.html">Cursos</a></li>
                 <li><a href="">Nosotros</a></li>
             </ul>
         </div>

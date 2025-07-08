@@ -29,15 +29,14 @@ body{
     margin: auto;
 }
 main{
+    padding: 1em 1.5em;
     width: 80%;
-    margin: 1em auto;
+    margin: 0 auto;
     border-radius: 0.5em;
     box-shadow: 0 0 0.5em var(--color-bordes1);
-    padding: 1em;
 }
 h1{
     font-size: 2em;
-
 }
 h2{
     font-size: 1.5em;
@@ -50,18 +49,72 @@ p{
 }
 a{
     text-decoration: none;
-
 }
 /* Le da formas a los bordesitos */
 .bordes_de{
     border-radius: 0.5em;
     box-shadow: 0 0 0.5em var(--color-bordes1);
 }
-
 .agrandar:hover{
     transform: scale(1.1);
-
 }
-.c_color:hover{
-    background-color:yellow;
+
+
+/* Media queares */
+/* Desktop medio */
+@media (max-width: 1200px){
+}
+/* Tablets */
+@media(max-width: 992px){
+    header{
+        .barra_navegacion{
+            padding: 1em 2em;
+        }
+    }
+    .info_hero{
+        width: 100%;
+        h2{
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        p{
+            line-height: 1em;
+            font-weight: 100;
+        }
+    }
+    .info_cursos{
+        flex-direction: column;
+        h2{
+            width: 100%;
+            padding: 1em;
+        }
+        .caja_lista{
+            width: 100%;
+        }
+    }
+    footer{
+        .caja_listas_footer{
+            padding: 3em 0;
+        }
+    }
+    /* Pagina login */
+    .formulario_lp{
+        h2{
+            text-align: center;
+        }
+    }
+}
+/* Moviles */
+@media(max-width: 576px){
+    header{
+        .barra_navegacion{
+            padding: 1em 3.5em;
+            .ocultar{
+                display: none;
+            }
+        }
+    }
+    main{
+        width: 100%;
+    }
 }

@@ -1,29 +1,32 @@
 /* Contenedora de toda la ecion */
 .info_cursos{
-    margin: 1em 0;
+    margin: 0;
+    padding: 1em 0;
     height: auto;
     min-height: 50vh;
     display: flex;
     gap: 1em;
-    
+    justify-content: space-between;
     /* Pregunta de la caja */
     h2{
-        width: 40em;
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight:800;
         text-align: center;
-        border: 0.1em solid var(--color-bordes1);
         color: var(--color_letra_negro);
         border-radius: 0.5em;
+        border: 0.1em solid var(--color-bordes1);   
+        box-shadow: 0 0 0.5em var(--color-bordes1);
     }
     /* Contiene todos los elemetos de la lista */
     .caja_lista{
-        padding: 1em 2em;
+        width: 70%;
+        padding: 2em 4em;
         line-height: 2.5em;
-        border: 0.1em solid var(--color-bordes1);    
         border-radius: 0.5em;
+        border: 0.1em solid var(--color-bordes1);   
+        box-shadow: 0 0 0.5em var(--color-bordes1);
 
         /* Modifica todos los elemtos de la lista */
         li{

@@ -23,6 +23,7 @@ function agreagarRutas(cursos,contenedor){
     cursos.forEach(curso => {
         
         let article = document.createElement("article")
+        article.id = curso.name
         article.classList.add("cajas_ra")
         article.classList.add("agrandar")
         article.classList.add("bordes_de")
@@ -46,3 +47,21 @@ function agreagarRutas(cursos,contenedor){
     })
 }
 agreagarRutas(rutasAprendisaje, contenedor_ru)
+
+// Funcion que rededirije a otra subpagina al hacer clik 
+function rederijirPage(idCaja, ruta){
+    // Accedemos al documento a traves del idCaja para poder para hcignarle la funcion
+    let caja = document.getElementById(idCaja)
+    // Asignamos la funcione
+    caja.addEventListener("click", function() {
+        window.location.href = ruta
+    })
+}
+
+// Redirije a rutas de aprendisaje
+rederijirPage("Desarrollo Front-end","rutas aprendisaje/desarrollo_front.html")
+
+rederijirPage("Desarrollo Back-end","rutas aprendisaje/desarrollo_back.html")
+rederijirPage("Desarrollo Movil","rutas aprendisaje/desarrollo_movil.html")
+
+
