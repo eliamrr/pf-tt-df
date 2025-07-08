@@ -1,4 +1,4 @@
-// alert("En CONTRUCION")
+alert("En CONSTRUCION....")
 // Contiene la imformacion de cursos
 let cursos = [
     {
