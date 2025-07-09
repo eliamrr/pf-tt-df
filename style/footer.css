@@ -1,5 +1,9 @@
 footer{
     background-color: var(--color_fondo_h);
+    position:static;
+    bottom: 0;
+    right: 0;
+    left: 0;
     .caja_listas_footer{
         padding: 1em 10em;
         display: flex;

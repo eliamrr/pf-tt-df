@@ -16,6 +16,7 @@
     }
     /* Contiene todas las cajas de las rutas de aprendisaje  */
     .contenedor_ra{
+        min-height: 58vh;
         margin: 3;
         padding: 3em 1em;
         display: flex;
