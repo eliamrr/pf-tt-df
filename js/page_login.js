@@ -91,5 +91,25 @@ document.addEventListener('DOMContentLoaded', () =>{
             alert("Bienvenido")
         }
     })
+    let menu = document.getElementById("menuid")
+    menu.addEventListener("click",()=>{
+        let lista = document.getElementById("lista_h")
+        lista.classList.remove("lista")
+        lista.classList.add("mv_ver")
+    })
+
+
+    let cerrar = document.getElementById("cerra")
+    cerrar.addEventListener("click",()=>{
+        let lista = document.getElementById("lista_h")
+        lista.classList.add("lista")
+        lista.classList.remove("mv_ver")
+        
+
+    })
+
+
+
+
 
 })

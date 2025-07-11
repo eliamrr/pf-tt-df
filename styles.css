@@ -60,12 +60,16 @@ a{
 }
 
 
+
 /* Media queares */
 /* Desktop medio */
 @media (max-width: 1200px){
 }
 /* Tablets */
 @media(max-width: 992px){
+    main{
+        width: 90%;
+    }
     header{
         .barra_navegacion{
             padding: 1em 2em;
@@ -108,13 +112,45 @@ a{
 @media(max-width: 576px){
     header{
         .barra_navegacion{
-            padding: 1em 3.5em;
-            .ocultar{
-                display: none;
+            padding: 1em ;
+            div{
+                .lista{
+                    padding: 1.5em 1em;
+                    display: flex;
+                    flex-direction: column;
+                    position:fixed;
+                    top: 0;
+                    right: -300px;
+                    height: 100vh;
+                    width: 200px;
+                    background-color:var(--color_fondo1);
+                    transition: 0.3s;
+                    .cerrar{
+                        display: block;
+                    }
+                }
+                .menu{
+                    display: block;
+                }
+                
             }
         }
     }
     main{
         width: 100%;
     }
+}
+.mv_ver{
+    right: 0;
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color:var(--color_fondo1);
+    transition: 0.3s;
+    list-style: none;
+    gap: 2em;
 }

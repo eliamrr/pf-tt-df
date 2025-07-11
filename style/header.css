@@ -10,12 +10,20 @@ header{
         justify-content: space-between;
         background-color: var(--color_fondo_h);
         /* todos los elementos se la lista */
-        .lista{
+        div{
             display: flex;
             gap: 2em;
-            list-style: none;
+            .lista{
+                display: flex;
+                gap: 2em;
+                list-style: none;
+                .cerrar{
+                    display: none;
+                }
+            }
+            .menu{
+                display: none;
+            }
         }
     }
-    
 }
-
